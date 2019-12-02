@@ -4,6 +4,8 @@ end
 
 def deal_card
   # code #deal_card here
+  random = [1..11].sample
+  random
 end
 
 def display_card_total
