@@ -4,7 +4,7 @@ end
 
 def deal_card
   # code #deal_card here
-  random = [1..11].sample
+  random = [0..11].sample
   random
 end
 
