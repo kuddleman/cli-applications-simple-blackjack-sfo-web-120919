@@ -7,7 +7,7 @@ def deal_card
   random
 end
 
-def display_card_total(total)
+def display_card_total(card_total)
   puts "Your cards add up to #{total}"
 end
 
@@ -26,8 +26,8 @@ end
 def initial_round
   num1 = deal_card
   num2 = deal_card
-  sum = num1 + num2
-  display_card_total(sum)
+  card_total = num1 + num2
+  display_card_total(card_total)
   sum
 
 end
