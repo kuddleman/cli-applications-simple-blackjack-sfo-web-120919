@@ -34,18 +34,14 @@ end
 
 def hit?
   prompt_user
-  get_user_input
+  choice = get_user_input
   if choice == 'h'
-    deal_card
+    card_total += deal_card
   elsif choice == 's'
     display_card_total
   else
-    puts invalid_command
-    prompt_user
-    get_user_input
+    invalid_command
   end
-
-  total
 end
 
 def invalid_command
