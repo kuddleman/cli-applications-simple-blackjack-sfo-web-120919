@@ -34,7 +34,7 @@ end
 
 def hit?
   prompt_user
-  choice = get_user_input
+  get_user_input
   if choice == 'h'
     deal_card
   elsif choice == 's'
@@ -45,7 +45,7 @@ def hit?
     get_user_input
   end
 
-  end
+  total
 end
 
 def invalid_command
